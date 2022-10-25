@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/crimeListFragment3">
+    <fragment
+        android:id="@+id/crimeFragment2"
+        android:name="com.bignerdranch.android.criminalintent.CrimeFragment"
+        android:label="CrimeFragment" >
+        <action
+            android:id="@+id/action_crimeFragment2_to_crimeListFragment3"
+            app:destination="@id/crimeListFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/crimeListFragment3"
+        android:name="com.bignerdranch.android.criminalintent.CrimeListFragment"
+        android:label="CrimeListFragment" >
+        <action
+            android:id="@+id/action_crimeListFragment3_to_crimeFragment2"
+            app:destination="@id/crimeFragment2" />
+    </fragment>
+</navigation>
